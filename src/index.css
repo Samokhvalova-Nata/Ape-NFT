@@ -68,7 +68,8 @@
 @font-face {
   font-family: 'Right Grotesk';
   src: url('../src/fonts/RightGrotesk/RightGrotesk-CompactBlack.otf');
-  src: local('RightGrotesk-CompactBlack'), local('RightGrotesk-CompactBlack');
+  src: local('RightGrotesk-CompactBlack'), local('RightGrotesk-CompactBlack'), 
+    url('../src/fonts/RightGrotesk/RightGrotesk-CompactBlack.otf') format('opentype');
   font-weight: 900;
   font-display: swap;
   font-style: normal;
