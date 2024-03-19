@@ -1,15 +1,156 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
+
+@font-face {
+  font-family: 'Messina Sans Mono';
+  src: url('../src/fonts/MessinaSans/MessinaSansMono-Regular.eot');
+  src: local('Messina Sans Mono Regular'), local('MessinaSansMono-Regular'),
+    url('../src/fonts/MessinaSans/MessinaSansMono-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../src/fonts/MessinaSans/MessinaSansMono-Regular.woff2') format('woff2'),
+    url('../src/fonts/MessinaSans/MessinaSansMono-Regular.woff') format('woff'),
+    url('../src/fonts/MessinaSans/MessinaSansMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Messina Sans Mono';
+  src: url('../src/fonts/MessinaSans/MessinaSansMono-SemiBold.eot');
+  src: local('Messina Sans Mono SemiBold'), local('MessinaSansMono-SemiBold'),
+    url('../src/fonts/MessinaSans/MessinaSansMono-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../src/fonts/MessinaSans/MessinaSansMono-SemiBold.woff2') format('woff2'),
+    url('../src/fonts/MessinaSans/MessinaSansMono-SemiBold.woff') format('woff'),
+    url('../src/fonts/MessinaSans/MessinaSansMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biro Script Plus';
+  src: url('../src/fonts/BiroScript/BiroScriptPlus.eot');
+  src: local('Biro Script Plus'), local('BiroScriptPlus'),
+    url('../src/fonts/BiroScript/BiroScriptPlus.eot?#iefix') format('embedded-opentype'),
+    url('../src/fonts/BiroScript/BiroScriptPlus.woff2') format('woff2'),
+    url('../src/fonts/BiroScript/BiroScriptPlus.woff') format('woff'),
+    url('../src/fonts/BiroScript/BiroScriptPlus.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biro Script Plus Bold US';
+  src: url('../src/fonts/BiroScript/BiroScriptUSPlus-Bold.eot');
+  src: local('Biro Script Plus Bold US'), local('BiroScriptUSPlus-Bold'),
+    url('../src/fonts/BiroScript/BiroScriptUSPlus-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../src/fonts/BiroScript/BiroScriptUSPlus-Bold.woff2') format('woff2'),
+    url('../src/fonts/BiroScript/BiroScriptUSPlus-Bold.woff') format('woff'),
+    url('../src/fonts/BiroScript/BiroScriptUSPlus-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Biro Script Plus';
+  src: url('../src/fonts/BiroScript/BiroScriptPlus-Bold.eot');
+  src: local('Biro Script Plus Bold'), local('BiroScriptPlus-Bold'),
+    url('../src/fonts/BiroScript/BiroScriptPlus-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../src/fonts/BiroScript/BiroScriptPlus-Bold.woff2') format('woff2'),
+    url('../src/fonts/BiroScript/BiroScriptPlus-Bold.woff') format('woff'),
+    url('../src/fonts/BiroScript/BiroScriptPlus-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Right Grotesk';
+  src: url('../src/fonts/RightGrotesk/RightGrotesk-CompactBlack.otf');
+  src: local('RightGrotesk-CompactBlack'), local('RightGrotesk-CompactBlack');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+:root {
+  --accent-color: #DC3B5A;
+
+  --primary-text-color: #FFFFFF;
+  --secondary-text-color: #1E1E1E;
+
+  --primary-background-color: #181818;
+  --secondary-background-color: rgba(255, 255, 255, 0.10); 
+
+  --shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --grad: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+}
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Messina Sans Mono', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.16;
+  font-size: 12px;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+button,
+a {
+  cursor: url('/src/images/icons/cursor-vector.svg'), auto;
+
 }
