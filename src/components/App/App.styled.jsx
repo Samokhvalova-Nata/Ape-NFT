@@ -2,8 +2,10 @@ import styled from '@emotion/styled';
 
 export const Container = styled.div`
     width: 100%;
+    padding-top: 54px;
     padding-left: 8px;
     padding-right: 8px;
+    padding-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
     outline: 2px solid tomato;
@@ -17,9 +19,11 @@ export const Container = styled.div`
       max-width: 768px;
       padding-left: 16px;
       padding-right: 16px;
+      padding-bottom: 40px;
     }    
 
     @media screen and (min-width: 1280px) {
-      max-width: 1280px;
+      max-width: 1440px;
+      padding-top: 16px;
     }
 `;

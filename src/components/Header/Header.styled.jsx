@@ -5,20 +5,39 @@ display: flex;
 padding: 8px;
 justify-content: space-between;
 align-items: center;
+    // gap: 100px;
+
+// background-color: var(--accent-color);
+
 position: absolute;
 width: 100%;
-// top: 8px;
+z-index: 1;
 
+@media screen and (min-width: 480px) {
+    max-width: 480px;
+  } 
 
-    @media screen and (min-width: 768px) {
-      padding: 12px;
-    }    
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding: 12px;
+  }    
 
-    @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
       padding: 24px 96px 0px 96px;
-    }
+      // max-width: 1440px;
+  }
+`;
 
+export const HeaderWrap = styled.div`
+// min-width: 100%;
+display: flex;
+// justify-content: space-between;
+    align-items: center;
+    gap: 100px;
 
+    // @media screen and (min-width: 1280px) {
+    //   max-width: 1440px;
+    // }
 `;
 
 export const Link = styled.a`
