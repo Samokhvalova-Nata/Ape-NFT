@@ -3,10 +3,11 @@ import styled from '@emotion/styled';
 export const HeroContainer = styled.section`
   max-width: 100%;
   height: 542px;
+
   border-radius: 12px;
   padding: 36px 0px 19px 0px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 8px;
+  margin-right: 8px;
   text-align: center;
   background-color: var(--accent-color);
   position: relative;
@@ -19,6 +20,8 @@ export const HeroContainer = styled.section`
     max-width: 768px;
     height: 421px;
     border-radius: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
     padding: 124px 72px 35px 72px;
   }    
 
