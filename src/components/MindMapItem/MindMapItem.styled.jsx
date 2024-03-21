@@ -45,6 +45,7 @@ export const Link = styled.a`
     fill: var(--primary-text-color);
     transition: right var(--transition);
 
+    
     @media screen and (min-width: 1280px) {
       width: 39.54px;
       height: 39.54px;
@@ -55,7 +56,13 @@ export const Link = styled.a`
 export const Text = styled.p`
   text-transform: uppercase;
 
+  @media screen and (min-width: 768px) {
+      width: 128px;
+      align-self: flex-end;
+    }
+
   @media screen and (min-width: 1280px) {
+    width: 228px;
     font-size: 24px;
     line-height: 1.2; 
   }

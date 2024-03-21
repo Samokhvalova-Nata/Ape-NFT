@@ -14,6 +14,7 @@ export const MindMapContainer = styled.section`
   @media screen and (min-width: 768px) {
     margin-top: 80px;
     padding: 0px 88px 0px 88px;
+    height: 100%;
   }
 
   @media screen and (min-width: 1280px) {
@@ -39,4 +40,24 @@ export const MindMapTitle = styled.h2`
     font-size: 160px;
     margin-bottom: 80px;
   }
+`;
+
+
+export const GridContainer = styled.div`
+  @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+`;
+
+export const Card = styled.div`
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 `;

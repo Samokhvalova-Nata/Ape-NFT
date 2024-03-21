@@ -7,6 +7,7 @@ import imgTablet2x from '../../images/pic/hero-tablet-2x.png';
 import imgDesktop1x from '../../images/pic/hero-desktop-1x.png';
 import imgDesktop2x from '../../images/pic/hero-desktop-2x.png';
 import Button from 'components/Button/Button';
+import { Link } from 'react-scroll';
 
 
 export const Hero = () => {
@@ -32,7 +33,9 @@ export const Hero = () => {
           <HeroTitleText>Apes aRe eveRywhere</HeroTitleText>
         </div>
         <div>
-          <Button text={'MEET APES'} />
+          <Button>
+            <Link to="mind" smooth={true} duration={500}>{'MEET APES'}</Link>
+          </Button>
           <HeroText>Yacht Ape is a collection of unique digital apes that you can own in NFT format</HeroText>
         </div>
       </HeroWrap>
