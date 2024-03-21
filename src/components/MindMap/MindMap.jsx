@@ -3,8 +3,6 @@ import { GridContainer, MindMapContainer, MindMapTitle} from './MindMap.styled';
 import { SwiperMobile } from 'components/SwiperMobile';
 import { MindMapItem } from 'components/MindMapItem';
 
-
-
 const mainMapCards = [
   {
     text: 'All owners of APE NFTs and all future collections will receive a percentage of sales based on the number of NFTs they own',
@@ -30,13 +28,11 @@ export const MindMap = () => {
     <MindMapContainer id="mind">
       <MindMapTitle>Mind map</MindMapTitle>
       <SwiperMobile />
-      
       <GridContainer>
         {mainMapCards.map(({ text, title }) => (
           <MindMapItem key={title} text={text} title={title}/>
       ))}
       </GridContainer>
-
     </MindMapContainer>
   );
 };

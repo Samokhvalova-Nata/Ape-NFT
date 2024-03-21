@@ -2,13 +2,15 @@ import styled from '@emotion/styled';
 
 
 export const Wrap = styled.div`
-  display: flex;
   width: 216px;
   height: 242px;
   padding: 24px 12px;
+
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   // align-items: flex-end;
+
   border-radius: 12px;
   background: ${props => (props.active ? '#DC3B5A' : '#1E1E1E')};
 

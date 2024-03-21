@@ -3,6 +3,7 @@ import { Header } from "../Header";
 import { Container } from "./App.styled";
 import { About } from "components/About";
 import { MindMap } from "components/MindMap";
+import { FAQ } from "components/FAQ";
 
 export const App = () => {
   return (
@@ -11,7 +12,8 @@ export const App = () => {
       <main>
         <Hero />
         <About />
-        <MindMap/>
+        <MindMap />
+        <FAQ/>
       </main>
     </Container>
   );

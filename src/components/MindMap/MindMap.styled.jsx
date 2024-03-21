@@ -6,7 +6,7 @@ export const MindMapContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 354px;
+  height: 374px;
 
   margin-top: 60px;
   padding: 0px 72px 0px 72px;

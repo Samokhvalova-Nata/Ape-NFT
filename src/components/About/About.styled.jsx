@@ -139,7 +139,6 @@ export const AboutImage = styled.img`
     height: 662px;
     top: 60.5%;
   }
-
 `;
 
 export const Banner = styled.div`
