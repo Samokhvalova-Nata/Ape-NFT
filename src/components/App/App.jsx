@@ -4,6 +4,8 @@ import { Container } from "./App.styled";
 import { About } from "components/About";
 import { MindMap } from "components/MindMap";
 import { FAQ } from "components/FAQ";
+import { Arts } from "components/Arts";
+import { ContactUs } from "components/ContactUs";
 
 export const App = () => {
   return (
@@ -13,7 +15,9 @@ export const App = () => {
         <Hero />
         <About />
         <MindMap />
-        <FAQ/>
+        <FAQ />
+        <Arts />
+        <ContactUs/>
       </main>
     </Container>
   );

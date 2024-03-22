@@ -1,7 +1,10 @@
 import React from 'react';
+import { ContactUsContainer, ContactUsTitle } from './ContactUs.styled';
 
 export const ContactUs = () => {
   return (
-    <div>ContactUs</div>
+    <ContactUsContainer>
+      <ContactUsTitle>Are you in?</ContactUsTitle>
+    </ContactUsContainer>
   );
 };

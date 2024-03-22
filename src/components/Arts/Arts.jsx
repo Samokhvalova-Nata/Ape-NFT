@@ -1,7 +1,13 @@
 import React from 'react';
+import { ArtsContainer, ArtsTitle } from './Arts.styled';
+import { ArtsSlider } from 'components/ArtsSlider/ArtsSlider';
+
 
 export const Arts = () => {
   return (
-    <div>Arts</div>
+    <ArtsContainer>
+      <ArtsTitle>COLLECTION</ArtsTitle>
+      <ArtsSlider/>
+    </ArtsContainer>
   );
 };

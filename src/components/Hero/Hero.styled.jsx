@@ -55,7 +55,7 @@ export const HeroWrap = styled.div`
   }
 
   @media screen and (min-width: 1280px) {
-    & div:first-child {
+    & div:first-of-type {
       display: flex;
       flex-direction: column;
     }

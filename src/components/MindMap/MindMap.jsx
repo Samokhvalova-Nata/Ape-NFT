@@ -1,5 +1,6 @@
 import React from 'react';
-import { GridContainer, MindMapContainer, MindMapTitle} from './MindMap.styled';
+import { useMediaQuery } from 'react-responsive';
+import { MindMapContainer, MindMapGrid, MindMapTitle} from './MindMap.styled';
 import { SwiperMobile } from 'components/SwiperMobile';
 import { MindMapItem } from 'components/MindMapItem';
 
@@ -23,16 +24,18 @@ const mainMapCards = [
 ];
 
 export const MindMap = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
 
   return (
     <MindMapContainer id="mind">
       <MindMapTitle>Mind map</MindMapTitle>
-      <SwiperMobile />
-      <GridContainer>
-        {mainMapCards.map(({ text, title }) => (
-          <MindMapItem key={title} text={text} title={title}/>
-      ))}
-      </GridContainer>
+      {isMobile
+        ? <SwiperMobile />
+        : <MindMapGrid>
+            {mainMapCards.map(({ text, title }) => (
+              <MindMapItem key={title} text={text} title={title}/>))}
+        </MindMapGrid>
+      }
     </MindMapContainer>
   );
 };

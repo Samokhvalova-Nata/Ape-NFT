@@ -1,20 +1,17 @@
 import styled from '@emotion/styled';
 
-
 export const MindMapContainer = styled.section`
+  margin-top: 60px;
+  padding: 0px 72px 0px 72px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 374px;
-
-  margin-top: 60px;
-  padding: 0px 72px 0px 72px;
 
   @media screen and (min-width: 768px) {
     margin-top: 80px;
     padding: 0px 88px 0px 88px;
-    height: 100%;
   }
 
   @media screen and (min-width: 1280px) {
@@ -42,22 +39,8 @@ export const MindMapTitle = styled.h2`
   }
 `;
 
-
-export const GridContainer = styled.div`
-  @media screen and (max-width: 767px) {
-      display: none;
-    }
-
-  @media screen and (min-width: 768px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-  }
-`;
-
-export const Card = styled.div`
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+export const MindMapGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 `;

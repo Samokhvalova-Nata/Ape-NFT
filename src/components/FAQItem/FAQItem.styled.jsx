@@ -104,9 +104,9 @@ export const FAQImage = styled.img`
     display: block;
     width: 182.613px;
     height: 183px;
-    transform: rotate(-16deg);
     border-radius: 16px;
 
+    transform: rotate(-16deg);
     position: absolute;
     top: -9.5%;
     left: 3%;
@@ -115,6 +115,7 @@ export const FAQImage = styled.img`
   @media screen and (min-width: 1280px) {
     width: 270px;
     height: 281.999px;
+
     transform: rotate(-8deg);
     left: 1%;
   }
