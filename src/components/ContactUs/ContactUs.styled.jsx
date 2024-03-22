@@ -15,7 +15,7 @@ export const ContactUsContainer = styled.section`
   }
 
   @media screen and (min-width: 1280px) {
-    margin-top: 120px;
+    margin-top: 100px;
     padding: 0px 204px 0px 204px;
   }
 `;

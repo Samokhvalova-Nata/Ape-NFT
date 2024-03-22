@@ -17,8 +17,8 @@
   height: auto;
   margin-top: 0;
 
-  top: 90%;
-  left: var(--swiper-navigation-sides-offset, 82px);
+  top: 92%;
+  left: 25%;
 }
 
 .swiper-button-next {
@@ -26,8 +26,8 @@
   height: auto;
   margin-top: 0;
 
-  top: 90%;
-  right: var(--swiper-navigation-sides-offset, 82px);
+  top: 92%;
+  right: 25%;
 }
 
 .swiper-button-prev:after {
@@ -47,11 +47,34 @@
   line-height: 1;
 }
 
-
-/* @media screen and (min-width: 768px) {
-
+@media screen and (min-width: 768px) {
+  .swiper-wrapper {
+    height: 370px;
+  }
+  
+  .swiper-button-prev {
+    top: 94%;
+    left: 38%;
+  }
+  
+  .swiper-button-next {
+    top: 94%;
+    right: 38%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .swiper-wrapper {
+    height: 320px;
+  }
 
-} */
+  .swiper-button-prev{
+    top: 93%;
+    left: 41%;
+  }
+
+.swiper-button-next {
+    top: 93%;
+    right: 41%;
+  }
+}

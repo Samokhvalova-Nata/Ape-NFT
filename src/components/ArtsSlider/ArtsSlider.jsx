@@ -83,7 +83,7 @@ export const ArtsSlider = () => {
                       ${el[1]} 568w,
                       ${el[2]} 1185w,
                       ${el[3]} 2370w,`}
-              sizes="(max-width: 768px) 284px, 1185px"
+              sizes="(max-width: 1279px) 284px, 1185px"
             />
         </SwiperSlide>
       ))}
