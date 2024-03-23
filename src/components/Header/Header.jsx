@@ -1,20 +1,14 @@
-import React from 'react';
-import icon from '../../images/icons/sprite-icons.svg';
-import { HeaderContainer, Link } from './Header.styled';
+import { HeaderContainer, HeaderWrap } from './Header.styled';
 import { BurgerMenu } from 'components/BurgerMenu';
+import { Logo } from 'components/Logo';
 
 export const Header = () => {
   return (
     <HeaderContainer>
-      {/* <HeaderWrap> */}
-        <Link href='/'>
-        <svg>
-          <use href={`${icon}#logo`}></use>
-        </svg>
-      </Link>
-      <BurgerMenu/>
-      {/* </HeaderWrap> */}
-      
+      <HeaderWrap>
+        <Logo/>
+        <BurgerMenu/>
+      </HeaderWrap>
     </HeaderContainer>
   );
 };

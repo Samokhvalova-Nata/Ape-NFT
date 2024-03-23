@@ -12,7 +12,8 @@ import { Banner } from 'components/Banner';
 
 export const About = () => {
   return (
-    <AboutContainer>
+    <>
+    <AboutContainer id="about">
       <AboutTitleWrap>
         <AboutTitle>a Story that started with
           <span> one simple ape</span>
@@ -40,7 +41,8 @@ export const About = () => {
         sizes='(max-width: 480px) 216px,
             (max-width: 768px) 313px,
             492px' />
+      </AboutContainer>
       <Banner/>
-    </AboutContainer>
+    </>
   );
 };

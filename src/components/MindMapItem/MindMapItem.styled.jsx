@@ -17,7 +17,8 @@ export const Wrap = styled.div`
   &:hover > a,
   &:focus > a {
     &> svg {
-      right: 2px;
+      top: -5px;
+      right: -5px;
     }
   }
 
@@ -38,14 +39,17 @@ export const Wrap = styled.div`
 export const Link = styled.a`
   position: relative;
   display: inline-block;
+  padding-top: 65px;
+  padding-bottom: 65px;
 
   > svg {
     position: absolute;
-    right: 10px;
+    top: 0px;
+    right: 0px;
     width: 24px;
     height: 24px;
     fill: var(--primary-text-color);
-    transition: right var(--transition);
+    transition: top var(--transition), right var(--transition);
 
     @media screen and (min-width: 1280px) {
       width: 39.54px;

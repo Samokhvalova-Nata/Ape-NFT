@@ -11,18 +11,20 @@ import { Footer } from "components/Footer";
 
 export const App = () => {
   return (
-    <Container>
+    <>
+    {/* <Container> */}
       <Header />
-      <main>
+      <Container>
         <Hero />
         <About />
         <MindMap />
         <FAQ />
         <Arts />
         <ContactUs/>
-      </main>
+      </Container>
       <Footer/>
       <Toaster position="top-right" reverseOrder={false} />
-    </Container>
+    {/* </Container> */}
+    </>
   );
 };

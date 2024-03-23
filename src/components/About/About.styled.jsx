@@ -130,14 +130,14 @@ export const AboutImage = styled.img`
 
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 57.5%;
+    top: 62.5%;
     left: 70%;
   }
 
   @media screen and (min-width: 1280px) {
     width: 492px;
     height: 662px;
-    top: 58.3%;
+    top: 63.5%;
   }
 `;
 

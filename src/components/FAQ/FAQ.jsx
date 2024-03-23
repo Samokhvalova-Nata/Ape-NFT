@@ -42,7 +42,7 @@ export const FAQ = () => {
   };
 
   return (
-    <FAQContainer>
+    <FAQContainer id="faq">
       <FAQTitle>FAQ</FAQTitle>
       {FAQlist.map(({ text, title, src }, index) => (
         <FAQItem

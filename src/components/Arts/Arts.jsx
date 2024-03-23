@@ -5,7 +5,7 @@ import { ArtsSlider } from 'components/ArtsSlider/ArtsSlider';
 
 export const Arts = () => {
   return (
-    <ArtsContainer>
+    <ArtsContainer id="arts">
       <ArtsTitle>COLLECTION</ArtsTitle>
       <ArtsSlider/>
     </ArtsContainer>
