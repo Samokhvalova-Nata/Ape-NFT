@@ -37,17 +37,16 @@ export const Wrap = styled.div`
 
 export const Link = styled.a`
   position: relative;
+  display: inline-block;
 
   > svg {
     position: absolute;
-    // top: 2px;
     right: 10px;
     width: 24px;
     height: 24px;
     fill: var(--primary-text-color);
     transition: right var(--transition);
 
-    
     @media screen and (min-width: 1280px) {
       width: 39.54px;
       height: 39.54px;

@@ -14,7 +14,7 @@ export const MindMapItem = ({ text, title }) => {
         </svg>
       </Link>
       }
-      <Text>{text}</Text>
+      {!isActive && <Text>{text}</Text>}
       <Title>{title}</Title>
     </Wrap>
   );

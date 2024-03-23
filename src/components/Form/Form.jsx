@@ -20,12 +20,15 @@ export const Form = () => {
   const [walletAddress, setWalletAddress] = useState('');
   const [statusUsername, setStatusUsername] = useState('default');
   const [statusAddress, setStatusAddress] = useState('default');
+  const [text, setText] = useState('MINT');
+
 
   const handleSubmit = (event) => {
     event.preventDefault();
 
     if (!validateUsername(username)) {
       setStatusUsername('error-name');
+      setText('ERROR');
       return;
     } else {
       setStatusUsername('filled');
@@ -33,6 +36,7 @@ export const Form = () => {
 
     if (!validateWalletAddress(walletAddress)) {
       setStatusAddress('error-address');
+      setText('ERROR');
       return;
     } else {
       setStatusAddress('filled');
@@ -57,6 +61,7 @@ export const Form = () => {
     setWalletAddress('');
     setStatusUsername('default');
     setStatusAddress('default');
+    setText('MINTED');
     toast.success('Your data have been send');
   };
 
@@ -95,7 +100,7 @@ export const Form = () => {
         />
         {statusAddress === 'error-address' && <ErrorText>Wrong address</ErrorText>}
       </InputWrap>
-      <Button type='submit' text='MINT'/>
+      <Button type='submit' text={text} />
     </FormContainer>
   );
 };

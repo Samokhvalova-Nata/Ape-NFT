@@ -53,17 +53,15 @@ export const Input = styled.input`
   padding-left: 24px;
   background-color: transparent;
 
-  
-
   border-radius: 0px 12px 12px 0px;
-  transition: border-color var(--transition);
+  transition: border var(--transition);
 
   color: ${props => (props.status === 'error' ? 'var(--accent-color)' : 'var(--primary-text-color)')};
-  // text-transform: uppercase;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
-    border-color: var(--primary-text-color);
+    border: 1px solid var(--primary-text-color);
   }
   
   &::placeholder {
@@ -73,6 +71,7 @@ export const Input = styled.input`
   }
 
   &:first-of-type {
+    background-color: transparent;
     border: 1px solid ${(props) => {
     switch (props.status) {
       case 'filled':
@@ -86,6 +85,7 @@ export const Input = styled.input`
   }
 
   &:last-child {
+    background-color: transparent;
     border: 1px solid ${(props) => {
     switch (props.status) {
       case 'filled':
