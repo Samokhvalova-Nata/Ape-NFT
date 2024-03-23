@@ -7,6 +7,7 @@ import { FAQ } from "components/FAQ";
 import { Arts } from "components/Arts";
 import { ContactUs } from "components/ContactUs";
 import { Toaster } from "react-hot-toast";
+import { Footer } from "components/Footer";
 
 export const App = () => {
   return (
@@ -20,6 +21,7 @@ export const App = () => {
         <Arts />
         <ContactUs/>
       </main>
+      <Footer/>
       <Toaster position="top-right" reverseOrder={false} />
     </Container>
   );

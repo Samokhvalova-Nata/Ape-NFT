@@ -7,7 +7,8 @@ import imgTablet1x from '../../images/pic/about-tablet-1x.png';
 import imgTablet2x from '../../images/pic/about-tablet-2x.png';
 import imgDesktop1x from '../../images/pic/about-desktop-1x.png';
 import imgDesktop2x from '../../images/pic/about-desktop-2x.png';
-import { AboutContainer, AboutImage, AboutText, AboutTextWrap, AboutTitle, AboutTitleText, AboutTitleWrap, Banner } from './About.styled';
+import { AboutContainer, AboutImage, AboutText, AboutTextWrap, AboutTitle, AboutTitleText, AboutTitleWrap } from './About.styled';
+import { Banner } from 'components/Banner';
 
 export const About = () => {
   return (
@@ -39,12 +40,7 @@ export const About = () => {
         sizes='(max-width: 480px) 216px,
             (max-width: 768px) 313px,
             492px' />
-      <Banner>
-        <svg>
-          <use href={`${icon}#addsharp`}></use>
-        </svg>
-        <p>HAVE NO LIMITS</p>
-      </Banner>
+      <Banner/>
     </AboutContainer>
   );
 };

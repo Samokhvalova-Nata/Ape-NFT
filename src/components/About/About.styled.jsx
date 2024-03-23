@@ -137,32 +137,7 @@ export const AboutImage = styled.img`
   @media screen and (min-width: 1280px) {
     width: 492px;
     height: 662px;
-    top: 60.5%;
+    top: 58.3%;
   }
 `;
 
-export const Banner = styled.div`
-  min-width: 100vw;
-  height: 52px;
-  background: #DC3B5A;
-  display: flex;
-  padding: 6px 0px 8px 0px;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 24px;
-
-  > svg {
-    width: 36px;
-    height: 36px;
-    fill: var(--primary-text-color);
-  }
-
-  > p {
-    font-family: "Right Grotesk";
-    font-size: 36px;
-    line-height: 1;
-    @media screen and (min-width: 1280px) {
-      font-size: 64px;
-  }
-}
-`;
