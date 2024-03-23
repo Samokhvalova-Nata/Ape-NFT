@@ -1,29 +1,31 @@
 import styled from '@emotion/styled';
 
 export const MainButton = styled.button`
-    border: 0;
-    border-radius: 8px;
-    width: 216px;
+    width: ${props => ( props.type === 'button' ? '216px' : '100%')};
     padding: 10px 0px 12px 0px;
-    background-color: rgba(30, 30, 30, 0.10);
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    color: var(--secondary-text-color);
+    border: 0;
+    border-radius: 8px;
+    background-color: ${props => ( props.type === 'button' ? 'rgba(30, 30, 30, 0.10)' : 'var(--accent-color)')};
+
+    color: ${props => (props.type === 'button' ? 'var(--secondary-text-color)' : 'var(--primary-text-color)')};
     font-family: "Right Grotesk";
     font-weight: 900;
-    line-height: 1.18;
     font-size: 16px;
-
-    // opacity: ${props => ( props.disabled ? 0.3 : 1)};
+    line-height: 1.18;
 
     @media screen and (min-width: 768px) {
         width: 100%;
+        padding: 10px 0px 12px 0px;
+        border-radius: 12px;
     }
 
     @media screen and (min-width: 1280px) {
+        padding: 16px 0px 20px 0px;
         font-size: 28px;
         line-height: 1.21;
     }
@@ -31,7 +33,7 @@ export const MainButton = styled.button`
     transition: color var(--transition);
     &:hover,
     &:focus {
-        color: var(--primary-text-color);
+        color:  ${props => ( props.type === 'button' ? 'var(--primary-text-color)' : 'var(--secondary-text-color)')};
     }
 
 `;

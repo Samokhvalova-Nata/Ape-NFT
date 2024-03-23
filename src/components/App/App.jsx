@@ -6,6 +6,7 @@ import { MindMap } from "components/MindMap";
 import { FAQ } from "components/FAQ";
 import { Arts } from "components/Arts";
 import { ContactUs } from "components/ContactUs";
+import { Toaster } from "react-hot-toast";
 
 export const App = () => {
   return (
@@ -19,6 +20,7 @@ export const App = () => {
         <Arts />
         <ContactUs/>
       </main>
+      <Toaster position="top-right" reverseOrder={false} />
     </Container>
   );
 };

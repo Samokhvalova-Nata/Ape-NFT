@@ -1,11 +1,11 @@
 import { MainButton } from "./Button.styled";
 
 
-const Button = ({ text,  disabled=false, children }) => {
+const Button = ({ text, disabled = false, children, type='button' }) => {
     return (
-        <MainButton type="button" disabled={disabled}>
+        <MainButton disabled={disabled} type={type}>
             {children}
-            {/* {text} */}
+            {text}
         </MainButton>
     );
 };
