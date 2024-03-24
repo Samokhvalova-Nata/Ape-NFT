@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link, Text, Title, Wrap } from './MindMapItem.styled';
 import icon from '../../images/icons/sprite-icons.svg';
+import { Link, Text, Title, Wrap } from './MindMapItem.styled';
+
 
 export const MindMapItem = ({ text, title }) => {
   const isActive = (title === 'Learn more in mind map');

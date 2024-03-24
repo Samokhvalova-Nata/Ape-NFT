@@ -1,7 +1,5 @@
-import React from 'react';
-import { ArtsContainer, ArtsTitle } from './Arts.styled';
 import { ArtsSlider } from 'components/ArtsSlider/ArtsSlider';
-
+import { ArtsContainer, ArtsTitle } from './Arts.styled';
 
 export const Arts = () => {
   return (

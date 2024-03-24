@@ -21,21 +21,21 @@ export const MindMapContainer = styled.section`
 `;
 
 export const MindMapTitle = styled.h2`
+  margin-bottom: 24px;
   font-family: "Right Grotesk";
   font-size: 44px;
   line-height: 0.9;
   text-transform: uppercase;
-  margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
     font-size: 80px;
     line-height: 1;
-    margin-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 160px;
     margin-bottom: 80px;
+    font-size: 160px;
   }
 `;
 

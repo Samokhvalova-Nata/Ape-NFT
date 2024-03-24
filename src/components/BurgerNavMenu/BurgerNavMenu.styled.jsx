@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 import { Link } from 'react-scroll';
 
-
 export const BurgerNavMenuContainer = styled.ul`
   display: flex;
   flex-direction: row-reverse;
@@ -10,10 +9,6 @@ export const BurgerNavMenuContainer = styled.ul`
 
   border-radius: 12px;
   background: rgba(30, 30, 30, 0.10);
-
-  @media screen and (min-width: 1280px) {
-    // gap: 16px;
-  }
 `;
 
 export const NavMenuElement = styled.li`
@@ -66,12 +61,4 @@ export const NavLink = styled(Link)`
     font-size: 16px;
     line-height: 1.18; 
   }
-  
 `;
-
-
-// @media screen and (min-width: 768px) {
-//   }
-
-//   @media screen and (min-width: 1280px) {
-//   }

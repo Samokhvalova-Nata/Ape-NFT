@@ -1,7 +1,7 @@
-import React from 'react';
-import { ContactUsContainer, ContactUsText, ContactUsTextWrap, ContactUsTitle } from './ContactUs.styled';
-import { Form } from 'components/Form';
 import icon from '../../images/icons/sprite-icons.svg';
+import { Form } from 'components/Form';
+import { ContactUsContainer, ContactUsText, ContactUsTextWrap, ContactUsTitle } from './ContactUs.styled';
+
 
 export const ContactUs = () => {
   return (

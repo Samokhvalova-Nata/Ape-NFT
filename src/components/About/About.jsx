@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
-import React from 'react';
 import icon from '../../images/icons/sprite-icons.svg';
 import imgMobile1x from '../../images/pic/about-mobile-1x.png';
 import imgMobile2x from '../../images/pic/about-mobile-2x.png';
@@ -7,8 +5,9 @@ import imgTablet1x from '../../images/pic/about-tablet-1x.png';
 import imgTablet2x from '../../images/pic/about-tablet-2x.png';
 import imgDesktop1x from '../../images/pic/about-desktop-1x.png';
 import imgDesktop2x from '../../images/pic/about-desktop-2x.png';
-import { AboutContainer, AboutImage, AboutText, AboutTextWrap, AboutTitle, AboutTitleText, AboutTitleWrap } from './About.styled';
 import { Banner } from 'components/Banner';
+import { AboutContainer, AboutImage, AboutText, AboutTextWrap, AboutTitle, AboutTitleText, AboutTitleWrap } from './About.styled';
+
 
 export const About = () => {
   return (

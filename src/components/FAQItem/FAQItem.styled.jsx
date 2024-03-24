@@ -11,11 +11,11 @@ export const FAQItemContainer = styled.div`
   position: relative;
 
   > span {
+    width: 31px;
     color: ${props => (props.active ? '#FFFFFF' : '#DC3B5A')};
     font-family: "Biro Script Plus";
     line-height: 1.66;
     transition: color var(--transition);
-    width: 31px;
   }
 
   &:hover > span,
@@ -27,8 +27,8 @@ export const FAQItemContainer = styled.div`
     width: 592px;
     border-radius: 16px;
     padding: 18px 16px 23px 16px;
-    gap: 21px;
     justify-content: flex-end;
+    gap: 21px;
 
     > span {
       font-size: 16px;
@@ -41,10 +41,11 @@ export const FAQItemContainer = styled.div`
     border-radius: 24px;
     padding: 24px;
     gap: 27px;
+
     > span {
+      width: 49px;
       font-size: 24px;
       line-height: 1.66;
-      width: 49px;
     }
   }
 `;
@@ -76,6 +77,7 @@ export const FAQTitleWrap = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 318px;
+
     > h3 {
       font-size: 32px;
     }
@@ -88,6 +90,7 @@ export const FAQTitleWrap = styled.div`
     > h3 {
       font-size: 64px;
     }
+
     > p {
       font-size: 16px;
       line-height: 1.18;
@@ -101,7 +104,6 @@ export const FAQImage = styled.img`
   }
 
   @media screen and (min-width: 768px) {
-    display: block;
     width: 182.613px;
     height: 183px;
     border-radius: 16px;

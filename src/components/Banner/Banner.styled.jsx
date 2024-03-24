@@ -3,8 +3,6 @@ import styled from '@emotion/styled';
 export const BannerContainer = styled.div`
   height: 52px;
   display: flex;
-  // justify-content: space-between;
-  // align-items: center;
   overflow: hidden;
 
   background: var(--accent-color);
@@ -17,7 +15,6 @@ export const BannerContainer = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
-  // justify-content: flex-end;
   align-items: center;
   gap: 24px;
 

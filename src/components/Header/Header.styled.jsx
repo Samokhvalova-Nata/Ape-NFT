@@ -7,17 +7,16 @@ export const HeaderContainer = styled.header`
 `;
 
 export const HeaderWrap = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-
   width: 100%;
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 62px;
   margin-left: auto;
   margin-right: auto;
-  // outline: 2px solid blue;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 
   @media screen and (min-width: 480px) {
     max-width: 480px;

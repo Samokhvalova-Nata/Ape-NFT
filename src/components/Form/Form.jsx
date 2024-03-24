@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { toast } from 'react-hot-toast';
-import { ErrorText, FormContainer, Input, InputIconWrap, InputWrap } from './Form.styled';
 import icon from '../../images/icons/sprite-icons.svg';
-import Button from 'components/Button/Button';
+import { Button } from 'components/Button';
+import { ErrorText, FormContainer, Input, InputIconWrap, InputWrap } from './Form.styled';
 
 
 const validateUsername = (username) => {
@@ -21,7 +21,6 @@ export const Form = () => {
   const [statusUsername, setStatusUsername] = useState('default');
   const [statusAddress, setStatusAddress] = useState('default');
   const [text, setText] = useState('MINT');
-
 
   const handleSubmit = (event) => {
     event.preventDefault();

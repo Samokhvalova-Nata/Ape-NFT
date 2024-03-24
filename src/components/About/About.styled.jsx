@@ -36,35 +36,38 @@ export const AboutTitleWrap = styled.div`
 `;
 
 export const AboutTitle = styled.h2`
+  width: 216px;
+  margin-bottom: 16px;
+
   font-family: "Right Grotesk";
   font-size: 40px;
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
-  margin-bottom: 16px;
-  width: 216px;
+
   & > span {
     color: var(--accent-color);
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 60px;
     width: 269px;
+    font-size: 60px;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 120px;
     width: 538px;
+    font-size: 120px;
   }
 `;
 
 export const AboutTitleText = styled.p`
-  text-align: right;
+  width: 216px;
+  margin-bottom: 36px;
+
   font-size: 16px;
   line-height: 1.18;
   font-weight: 400;
-  width: 216px;
-  margin-bottom: 36px;
+  text-align: right;
 
   @media screen and (min-width: 768px) {
     width: 275px;
@@ -72,8 +75,8 @@ export const AboutTitleText = styled.p`
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 24px;
     width: 409px;
+    font-size: 24px;
     line-height: 1.2;
   }
 `;
@@ -101,9 +104,9 @@ export const AboutTextWrap = styled.div`
 
 export const AboutText = styled.p`
   width: 216px;
-  text-align: center;
   margin-top: 16px;
   margin-bottom: 40px;
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     width: 269px;
@@ -113,9 +116,9 @@ export const AboutText = styled.p`
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 24px;
-    margin-top: 36px;
     width: 417px;
+    margin-top: 36px;
+    font-size: 24px;
     line-height: 1.2;
   }
 `;
@@ -140,4 +143,3 @@ export const AboutImage = styled.img`
     top: 63.5%;
   }
 `;
-

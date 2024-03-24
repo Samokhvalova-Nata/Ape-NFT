@@ -155,7 +155,3 @@ a {
   cursor: url('/src/images/icons/cursor-vector.svg'), auto;
 
 }
-
-.no-scroll {
-  overflow: hidden;
-}

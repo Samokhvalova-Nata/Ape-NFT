@@ -3,13 +3,14 @@ import styled from '@emotion/styled';
 export const HeroContainer = styled.section`
   max-width: 100%;
   height: 542px;
-
-  border-radius: 12px;
   padding: 36px 0px 19px 0px;
   margin-left: 8px;
   margin-right: 8px;
-  text-align: center;
+
+  border-radius: 12px;
   background-color: var(--accent-color);
+  text-align: center;
+
   position: relative;
 
   @media screen and (min-width: 480px) {
@@ -19,17 +20,17 @@ export const HeroContainer = styled.section`
   @media screen and (min-width: 768px) {
     max-width: 768px;
     height: 421px;
-    border-radius: 16px;
+    padding: 124px 72px 35px 72px;
     margin-left: 16px;
     margin-right: 16px;
-    padding: 124px 72px 35px 72px;
+    border-radius: 16px;
   }    
 
   @media screen and (min-width: 1280px) {
     max-width: 1440px;
     height: 677px;
-    border-radius: 24px;
     padding: 197px 195px 81px 194px;
+    border-radius: 24px;
   }
 `;
 
@@ -44,10 +45,12 @@ export const HeroWrap = styled.div`
     gap: 0px;
     align-items: flex-end;
     & div:last-child {
+      width: 190px;
+
       display: flex;
       flex-direction: column-reverse;
       gap: 16px;
-      width: 190px;
+
       position: absolute;
       transform: translateY(150px);
       z-index: 20;
@@ -60,8 +63,8 @@ export const HeroWrap = styled.div`
       flex-direction: column;
     }
     & div:last-child {
-      gap: 28px;
       width: 337px;
+      gap: 28px;
       transform: translateY(250px);
     }
   }
@@ -70,6 +73,7 @@ export const HeroWrap = styled.div`
 export const HeroImage = styled.img`
   width: 216px;
   height: 284px;
+
   position: absolute;
   z-index: 15;
   top: 54%;
@@ -96,11 +100,14 @@ export const HeroTitleText = styled.p`
   font-family: "Biro Script Plus Bold US";
   font-size: 16px;
   line-height: 1.68;
+
   &:nth-of-type(2) {
     margin-bottom: 6px;
+
     @media screen and (min-width: 768px) {
       margin-bottom: 0px;
     }
+
     @media screen and (min-width: 1280px) {
       margin-left: 110px;
     }
@@ -119,44 +126,46 @@ export const HeroTitleText = styled.p`
 `;
 
 export const HeroTitle = styled.h1`
-    color: var(--secondary-text-color);
-    font-family: "Right Grotesk";
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 1;
-    letter-spacing: 0.44px;
-    padding-bottom: 8px;
+  padding-bottom: 8px;
 
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  color: var(--secondary-text-color);
+  font-family: "Right Grotesk";
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 0.44px;
 
   @media screen and (min-width: 768px) {
+    width: 591px;
+    padding-bottom: 16px;
     justify-content: space-between;
     font-size: 92px;
     letter-spacing: 0.92px;
-    padding-bottom: 16px;
-    width: 591px;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 164px;
-    padding-bottom: 30px; 
     width: 1019px;
+    padding-bottom: 30px;
+    font-size: 164px;
   } 
 `;
 
 export const HeroText = styled.p`
-  color: var(--secondary-text-color);
   width: 217px;
-  text-align: center;
-  text-transform: uppercase;
   margin-top: 12px;
 
+  color: var(--secondary-text-color);
+  text-align: center;
+  text-transform: uppercase;
+
   @media screen and (min-width: 768px) {
-    text-align: end;
-    margin-top: 0px;
     width: 100%;
+    margin-top: 0px;
+    text-align: end;
   }
 
   @media screen and (min-width: 1280px) {

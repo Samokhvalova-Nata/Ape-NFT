@@ -1,4 +1,3 @@
-import React from 'react';
 import { FAQImage, FAQItemContainer, FAQTitleWrap } from './FAQItem.styled';
 
 

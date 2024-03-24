@@ -11,12 +11,11 @@ export const MobileMenuContainer = styled.div`
   justify-content: center;
   gap: 16px;
 
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  right: 0;
-
   background-color: var(--primary-background-color);
+
+  position: fixed;
+  z-index: 20;
+  top: 0;
 `;
 
 export const MobileMenuWrap = styled.div`

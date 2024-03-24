@@ -16,7 +16,6 @@ export const BurgerMenuWrap = styled.ul`
 export const MenuElement = styled.li`
   width: 48px;
   height: 48px;
-  // padding: 10px;
 
   display: flex;
   justify-content: center;
@@ -32,8 +31,7 @@ export const MenuElement = styled.li`
   }
 
   @media screen and (min-width: 768px) {
-  border-radius: 12px;
-
+    border-radius: 12px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -41,8 +39,6 @@ export const MenuElement = styled.li`
     height: 80px;
   }
 `;
-
-// ${props => ( props.mobile ? 'var(--accent-color)' : '#F0F0F0')}
 
 export const MenuButton = styled.button`
   background-color: transparent;
@@ -60,8 +56,7 @@ export const MenuButton = styled.button`
 `;
 
 export const Link = styled.a`
-display: block;
-padding: 10px;
+  padding: 10px;
   &:hover > svg,
   &:focus > svg {
     fill: ${props => ( props.mobile ? 'var(--accent-color)' : '#F0F0F0')};

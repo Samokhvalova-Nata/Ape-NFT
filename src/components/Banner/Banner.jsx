@@ -1,4 +1,3 @@
-import React from 'react';
 import icon from '../../images/icons/sprite-icons.svg';
 import { BannerContainer, Wrapper } from './Banner.styled';
 

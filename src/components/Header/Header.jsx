@@ -1,6 +1,6 @@
-import { HeaderContainer, HeaderWrap } from './Header.styled';
 import { BurgerMenu } from 'components/BurgerMenu';
 import { Logo } from 'components/Logo';
+import { HeaderContainer, HeaderWrap } from './Header.styled';
 
 export const Header = () => {
   return (

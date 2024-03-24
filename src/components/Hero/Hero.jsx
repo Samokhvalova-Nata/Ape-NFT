@@ -1,4 +1,5 @@
-import React from 'react';
+import { Link } from 'react-scroll';
+import { Button } from 'components/Button';
 import { HeroContainer, HeroImage, HeroText, HeroTitle, HeroTitleText, HeroWrap } from './Hero.styled';
 import imgMobile1x from '../../images/pic/hero-mobile-1x.png';
 import imgMobile2x from '../../images/pic/hero-mobile-2x.png';
@@ -6,8 +7,6 @@ import imgTablet1x from '../../images/pic/hero-tablet-1x.png';
 import imgTablet2x from '../../images/pic/hero-tablet-2x.png';
 import imgDesktop1x from '../../images/pic/hero-desktop-1x.png';
 import imgDesktop2x from '../../images/pic/hero-desktop-2x.png';
-import Button from 'components/Button/Button';
-import { Link } from 'react-scroll';
 
 
 export const Hero = () => {

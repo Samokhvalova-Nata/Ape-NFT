@@ -8,7 +8,6 @@ export const MainButton = styled.button`
     justify-content: center;
     align-items: center;
 
-    // border: 0;
     border-radius: 8px;
     background-color: ${props => ( props.type === 'button' ? 'rgba(30, 30, 30, 0.10)' : 'var(--accent-color)')};
 

@@ -9,7 +9,6 @@ export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  // align-items: flex-end;
 
   border-radius: 12px;
   background: ${props => (props.active ? '#DC3B5A' : '#1E1E1E')};
@@ -37,17 +36,20 @@ export const Wrap = styled.div`
 `;
 
 export const Link = styled.a`
-  position: relative;
-  display: inline-block;
   padding-top: 65px;
   padding-bottom: 65px;
 
+  position: relative;
+  display: inline-block;
+
   > svg {
+    width: 24px;
+    height: 24px;
+
     position: absolute;
     top: 0px;
     right: 0px;
-    width: 24px;
-    height: 24px;
+
     fill: var(--primary-text-color);
     transition: top var(--transition), right var(--transition);
 
@@ -82,5 +84,4 @@ export const Title = styled.h3`
   @media screen and (min-width: 1280px) {
     font-size: 64px;
   }
-
 `;

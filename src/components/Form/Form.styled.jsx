@@ -1,11 +1,11 @@
 import styled from '@emotion/styled';
 
 export const FormContainer = styled.form`
+  width: 216px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  width: 216px;
 
   @media screen and (min-width: 768px) {
     width: 248px;
@@ -17,17 +17,17 @@ export const FormContainer = styled.form`
 `;
 
 export const InputWrap = styled.div`
-  display: flex;
   width: 100%;
+  display: flex;
   position: relative;
 `;
 
 export const InputIconWrap = styled.div`
   width: 48px;
   height: 48px;
+  padding: 10px;
   
   display: flex;
-  padding: 10px;
   justify-content: center;
   align-items: center;
   gap: 10px;

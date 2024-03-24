@@ -5,8 +5,6 @@ export const FooterContainer = styled.footer`
   padding-bottom: 24px;
   display: flex;
   justify-content: center;
-  // outline: 2px solid blue;
-
 
   @media screen and (min-width: 768px) {
     margin-top: 80px;

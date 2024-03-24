@@ -1,4 +1,3 @@
-import React from 'react';
 import icon from '../../images/icons/sprite-icons.svg';
 import { Link } from './Logo.styled';
 
