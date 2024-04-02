@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 export const Link = styled.a`
   &:hover > svg,
   &:focus > svg {
-    fill: var(--accent-color);
+    fill: ${props => ( props.mobile ? 'var(--accent-color)' : 'var(--secondary-text-color)')};
   }
 
   > svg {

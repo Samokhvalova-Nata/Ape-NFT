@@ -146,12 +146,10 @@ button {
 }
 
 a {
+  cursor: pointer;
   text-decoration: none;
 }
 
-body,
-button,
-a {
+body {
   cursor: url('/src/images/icons/cursor-vector.svg'), auto;
-
 }

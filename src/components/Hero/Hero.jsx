@@ -33,7 +33,7 @@ export const Hero = () => {
         </div>
         <div>
           <Button>
-            <Link to="mind" smooth={true} duration={500}>{'MEET APES'}</Link>
+            <Link to="mint" smooth={true} duration={500}>{'MEET APES'}</Link>
           </Button>
           <HeroText>Yacht Ape is a collection of unique digital apes that you can own in NFT format</HeroText>
         </div>

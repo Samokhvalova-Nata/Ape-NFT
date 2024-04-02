@@ -20,12 +20,15 @@ export const NavMenuElement = styled.li`
   justify-content: center;
   align-items: center;
 
+  backdrop-filter: blur(6px);
+
   &:hover > button,
   &:focus > button,
   &:hover > a,
   &:focus > a {
     color: var(--primary-text-color);
     text-decoration: underline;
+    
   }
 
   @media screen and (min-width: 1280px) {
@@ -60,5 +63,9 @@ export const NavLink = styled(Link)`
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.18; 
+  }
+  
+  &:focus {
+    outline: grey solid 1px;
   }
 `;

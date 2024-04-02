@@ -22,6 +22,7 @@ export const MenuElement = styled.li`
   align-items: center;
 
   border-radius: 8px;
+  backdrop-filter: blur(6px);
   background: ${props => ( props.mobile ? 'rgba(255, 255, 255, 0.10)' : 'rgba(30, 30, 30, 0.10)')};
 
   &:hover > button,

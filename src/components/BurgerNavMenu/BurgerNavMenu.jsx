@@ -12,10 +12,10 @@ export const BurgerNavMenu = ({ isOpened, onClick }) => {
       <nav>
         <BurgerNavMenuContainer>
           <NavMenuElement>
-            <NavMenuButton onClick={onClick}>{!isOpened ? 'Menu' : 'Close'}</NavMenuButton>
+            <NavMenuButton type='button' onClick={onClick}>{!isOpened ? 'Menu' : 'Close'}</NavMenuButton>
           </NavMenuElement>
           <NavMenuElement>
-            <NavLink to="mind" smooth={true} duration={500}>{'MINT'}</NavLink>
+            <NavLink to="mint" smooth={true} duration={500} activeClass="active"  >{'MINT'}</NavLink>
           </NavMenuElement>
           <NavMenuElement>
             <NavLink to="arts" smooth={true} duration={500}>{'ARTS'}</NavLink>

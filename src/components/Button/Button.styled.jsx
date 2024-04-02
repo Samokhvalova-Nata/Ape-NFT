@@ -7,10 +7,12 @@ export const MainButton = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
     border-radius: 8px;
     background-color: ${props => ( props.type === 'button' ? 'rgba(30, 30, 30, 0.10)' : 'var(--accent-color)')};
 
+    backdrop-filter: ${props => ( props.type === 'button' ? 'blur(6px)' : 'none')};
     color: ${props => (props.type === 'button' ? 'var(--secondary-text-color)' : 'var(--primary-text-color)')};
     font-family: "Right Grotesk";
     font-weight: 900;

@@ -18,7 +18,7 @@ export const MobileMenu = ({ isOpened, onClick }) => {
           <nav>
           <MobileMenuNav>
             <MobileMenuElement>
-              <NavLink to="mind" smooth={true} duration={500} onClick={onClick}>{'MINT'}</NavLink>
+              <NavLink to="mint" smooth={true} duration={500} onClick={onClick}>{'MINT'}</NavLink>
             </MobileMenuElement>
             <MobileMenuElement>
               <NavLink to="arts" smooth={true} duration={500} onClick={onClick}>{'ARTS'}</NavLink>

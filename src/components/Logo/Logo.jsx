@@ -4,7 +4,7 @@ import { Link } from './Logo.styled';
 
 export const Logo = ({mobile=false}) => {
   return (
-    <Link href='/' mobile={mobile}>
+    <Link href='/Ape-NFT' mobile={mobile}>
       <svg>
         <use href={`${icon}#logo`}></use>
       </svg>

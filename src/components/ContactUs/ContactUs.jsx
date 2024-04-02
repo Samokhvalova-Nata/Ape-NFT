@@ -5,7 +5,7 @@ import { ContactUsContainer, ContactUsText, ContactUsTextWrap, ContactUsTitle } 
 
 export const ContactUs = () => {
   return (
-    <ContactUsContainer>
+    <ContactUsContainer id="mint">
       <ContactUsTitle>Are you in?</ContactUsTitle>
       <ContactUsTextWrap>
         <svg>

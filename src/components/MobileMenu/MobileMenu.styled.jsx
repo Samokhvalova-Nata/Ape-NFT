@@ -68,6 +68,8 @@ export const MobileMenuElement = styled.li`
   }
 `;
 
+
+
 export const NavLink = styled(Link)`
   background-color: transparent;
   color: var(--primary-text-color);
@@ -81,6 +83,10 @@ export const NavLink = styled(Link)`
   @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.18; 
+  }
+
+  &:focus {
+    outline: grey solid 1px;
   }
 `;
 
