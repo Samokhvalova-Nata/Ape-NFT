@@ -14,7 +14,7 @@ export const BurgerNavMenuContainer = styled.ul`
 export const NavMenuElement = styled.li`
   width: 50px;
   height: 50px;
-  padding: 10px;
+  // padding: 10px;
 
   display: flex;
   justify-content: center;

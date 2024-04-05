@@ -2,6 +2,7 @@ import { createPortal } from 'react-dom';
 import { Logo } from 'components/Logo';
 import { BurgerMenuList } from 'components/BurgerMenuList';
 import { LogoMenuWrap, MobileMenuContainer, MobileMenuContent, MobileMenuElement, MobileMenuNav, MobileMenuText, MobileMenuWrap, NavLink } from './MobileMenu.styled';
+import { navLinks } from 'data';
 
 const mobileRoot = document.getElementById('mobile-root');
 
@@ -16,23 +17,19 @@ export const MobileMenu = ({ isOpened, onClick }) => {
           </LogoMenuWrap>
 
           <nav>
-          <MobileMenuNav>
-            <MobileMenuElement>
-              <NavLink to="mint" smooth={true} duration={500} onClick={onClick}>{'MINT'}</NavLink>
-            </MobileMenuElement>
-            <MobileMenuElement>
-              <NavLink to="arts" smooth={true} duration={500} onClick={onClick}>{'ARTS'}</NavLink>
-            </MobileMenuElement>
-            <MobileMenuElement>
-              <NavLink to="faq" smooth={true} duration={500} onClick={onClick}>{'Faq'}</NavLink>
-            </MobileMenuElement>
-            <MobileMenuElement>
-              <NavLink to="mind" smooth={true} duration={500} onClick={onClick}>{'M-map'}</NavLink>
-            </MobileMenuElement>
-            <MobileMenuElement>
-              <NavLink to="about" smooth={true} duration={500} onClick={onClick}>{'ABOUT'}</NavLink>
-            </MobileMenuElement>
-        </MobileMenuNav>
+            <MobileMenuNav>
+              {navLinks.map(({to, children}) =>
+                <MobileMenuElement key={to}>
+                  <NavLink
+                    to={to}
+                    smooth={true}
+                    duration={500}
+                    onClick={onClick}>
+                    {children}
+                  </NavLink>
+                </MobileMenuElement>
+              )}
+            </MobileMenuNav>
           </nav>
 
         </MobileMenuContent>

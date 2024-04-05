@@ -12,7 +12,7 @@ import imgDesktop2x from '../../images/pic/hero-desktop-2x.png';
 export const Hero = () => {
   return (
     <HeroContainer>
-      <HeroImage src={imgMobile1x} alt='hero-image'
+      <HeroImage src={imgMobile1x} alt='NFT monkey in bussiness style'
         srcSet={`${imgMobile1x} 216w,
                 ${imgMobile2x} 432w,
                 ${imgTablet1x} 283w,

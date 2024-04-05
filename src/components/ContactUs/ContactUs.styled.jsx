@@ -59,6 +59,15 @@ export const ContactUsText = styled.p`
   margin-bottom: 16px;
   text-transform: uppercase;
 
+  // &::before {
+  //   content: "";
+  //   display: inline-block;
+  //   width: 36px;
+  // height: 36px;
+  // background-image: url("../../images/icons/add-sharp.png");
+  // background-size: contain;
+  // }
+
   @media screen and (min-width: 768px) {
     width: 397px;
     margin-top: 24px;

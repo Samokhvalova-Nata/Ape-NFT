@@ -48,6 +48,7 @@ import FAQimg3_2x from './images/pic/FAQ-img3-2x.png';
 import FAQimg4_1x from './images/pic/FAQ-img4-1x.png';
 import FAQimg4_2x from './images/pic/FAQ-img4-2x.png';
 
+
 export const artsList = [
  [arts1_mob_1x, arts1_mob_2x, arts1_desk_1x, arts1_desk_2x],
  [arts2_mob_1x, arts2_mob_2x, arts2_desk_1x, arts2_desk_2x],
@@ -105,4 +106,26 @@ export const mainMapCards = [
     text: '',
     title: 'Learn more in mind map'
   }
+];
+
+export const menuElements = [
+ {
+  linkHref: 'https://discord.com/',
+  ariaLabel: 'Discord link',
+  svgHref: 'discord',
+ },
+ {
+  linkHref: 'https://logomark.com/',
+  ariaLabel: 'Logomark link',
+  svgHref: 'logomarkblue',
+ },
+ { linkHref: 'https://twitter.com/', ariaLabel: 'X link', svgHref: 'icon-x' },
+];
+
+export const navLinks = [
+ { to: 'mint', children: 'MINT' },
+ { to: 'arts', children: 'ARTS' },
+ { to: 'faq', children: 'Faq' },
+ { to: 'mind', children: 'M-map' },
+ { to: 'about', children: 'ABOUT' },
 ];

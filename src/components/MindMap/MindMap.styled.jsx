@@ -39,7 +39,7 @@ export const MindMapTitle = styled.h2`
   }
 `;
 
-export const MindMapGrid = styled.div`
+export const MindMapGrid = styled.ul`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;

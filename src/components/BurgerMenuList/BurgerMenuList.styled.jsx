@@ -57,7 +57,7 @@ export const MenuButton = styled.button`
 `;
 
 export const Link = styled.a`
-  padding: 10px;
+  // padding: 10px;
   &:hover > svg,
   &:focus > svg {
     fill: ${props => ( props.mobile ? 'var(--accent-color)' : '#F0F0F0')};

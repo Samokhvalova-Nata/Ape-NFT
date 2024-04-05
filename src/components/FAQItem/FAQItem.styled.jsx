@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const FAQItemContainer = styled.div`
+export const FAQItemContainer = styled.li`
   width: 216px;
   border-radius: 12px;
   padding: 8px 8px 10px 8px;

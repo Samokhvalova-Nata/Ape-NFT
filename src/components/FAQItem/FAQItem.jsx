@@ -5,7 +5,7 @@ export const FAQItem = ({ title, text, index, src, openIndex, toggleFAQ, isOpen 
   return (
     <FAQItemContainer onClick={() => toggleFAQ(index)} active={isOpen}>
       {index === openIndex &&
-        <FAQImage src={src[0]} alt='FAQ-image'
+        <FAQImage src={src[0]} alt='NFT monkey example' loading='lazy'
                   srcSet={`${src[0]} 183w,
                           ${src[1]} 366w,
                           ${src[0]} 270w,

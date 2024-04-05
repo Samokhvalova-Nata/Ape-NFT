@@ -24,7 +24,7 @@ export const ArtsSlider = () => {
       {artsList.map((el, index) => (
         <SwiperSlide key={index}>
             <ArtsImage
-              src={el[0]} alt='Arts element' loading='lazy'
+              src={el[0]} alt='NFT monkey example' loading='lazy'
               srcSet={`${el[0]} 284w,
                       ${el[1]} 568w,
                       ${el[2]} 1185w,

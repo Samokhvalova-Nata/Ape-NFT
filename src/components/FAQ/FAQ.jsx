@@ -14,18 +14,20 @@ export const FAQ = () => {
   return (
     <FAQContainer id="faq">
       <FAQTitle>FAQ</FAQTitle>
-      {FAQlist.map(({ text, title, src }, index) => (
-        <FAQItem
-          key={title}
-          text={text}
-          title={title}
-          index={index}
-          openIndex={openIndex}
-          toggleFAQ={toggleFAQ}
-          isOpen={index === openIndex}
-          src={src}
-        />
-      ))}
+      <ul>
+        {FAQlist.map(({ text, title, src }, index) => (
+          <FAQItem
+            key={title}
+            text={text}
+            title={title}
+            index={index}
+            openIndex={openIndex}
+            toggleFAQ={toggleFAQ}
+            isOpen={index === openIndex}
+            src={src}/>
+        ))}
+      </ul>
+      
     </FAQContainer>
   );
 };
