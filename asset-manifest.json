@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Ape-NFT/static/css/main.e090ba93.css",
-    "main.js": "/Ape-NFT/static/js/main.db61e0f7.js",
+    "main.js": "/Ape-NFT/static/js/main.f12edb76.js",
     "static/media/arts2-desktop-2x.png": "/Ape-NFT/static/media/arts2-desktop-2x.c6d413d75535efc36e0c.png",
     "static/media/arts8-desktop-2x.png": "/Ape-NFT/static/media/arts8-desktop-2x.fd8db078e3e6cf90d16b.png",
     "static/media/arts9-desktop-2x.png": "/Ape-NFT/static/media/arts9-desktop-2x.c67bf8990193bd7a6f12.png",
@@ -87,10 +87,10 @@
     "index.html": "/Ape-NFT/index.html",
     "static/media/cursor-vector.svg": "/Ape-NFT/static/media/cursor-vector.3885e00401b8e9905c2c.svg",
     "main.e090ba93.css.map": "/Ape-NFT/static/css/main.e090ba93.css.map",
-    "main.db61e0f7.js.map": "/Ape-NFT/static/js/main.db61e0f7.js.map"
+    "main.f12edb76.js.map": "/Ape-NFT/static/js/main.f12edb76.js.map"
   },
   "entrypoints": [
     "static/css/main.e090ba93.css",
-    "static/js/main.db61e0f7.js"
+    "static/js/main.f12edb76.js"
   ]
 }
