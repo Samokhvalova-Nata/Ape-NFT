@@ -1,8 +1,7 @@
 import { useMediaQuery } from 'react-responsive';
-import icon from '../../images/icons/sprite-icons.svg';
-import { BurgerMenuWrap, Link, MenuButton, MenuElement } from './BurgerMenuList.styled'
+import icon from '../../../images/icons/sprite-icons.svg';
 import { menuElements } from 'data';
-
+import { BurgerMenuWrap, Link, MenuButton, MenuElement } from './BurgerMenuList.styled'
 
 export const BurgerMenuList = ({ isOpened, onClick, mobile = false }) => {
   const isMobile = useMediaQuery({ maxWidth: 767 });

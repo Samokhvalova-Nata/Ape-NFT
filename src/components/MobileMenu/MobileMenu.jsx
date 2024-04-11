@@ -1,8 +1,8 @@
 import { createPortal } from 'react-dom';
-import { Logo } from 'components/Logo';
-import { BurgerMenuList } from 'components/BurgerMenuList';
-import { LogoMenuWrap, MobileMenuContainer, MobileMenuContent, MobileMenuElement, MobileMenuNav, MobileMenuText, MobileMenuWrap, NavLink } from './MobileMenu.styled';
 import { navLinks } from 'data';
+import { Logo } from 'components/Header/Logo';
+import { BurgerMenuList } from 'components/Header/BurgerMenuList';
+import { LogoMenuWrap, MobileMenuContainer, MobileMenuContent, MobileMenuElement, MobileMenuNav, MobileMenuText, MobileMenuWrap, NavLink } from './MobileMenu.styled';
 
 const mobileRoot = document.getElementById('mobile-root');
 

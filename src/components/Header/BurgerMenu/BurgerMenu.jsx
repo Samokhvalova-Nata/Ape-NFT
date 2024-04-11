@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { BurgerNavMenu } from 'components/BurgerNavMenu';
-import { BurgerMenuList } from 'components/BurgerMenuList';
+import { BurgerNavMenu } from 'components/Header/BurgerNavMenu';
+import { BurgerMenuList } from 'components/Header/BurgerMenuList';
 import { BurgerMenuContainer } from './BurgerMenu.styled';
 
 

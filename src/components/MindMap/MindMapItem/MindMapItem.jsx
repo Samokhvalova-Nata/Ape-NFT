@@ -1,4 +1,4 @@
-import icon from '../../images/icons/sprite-icons.svg';
+import icon from '../../../images/icons/sprite-icons.svg';
 import { Link, Text, Title, Wrap } from './MindMapItem.styled';
 
 

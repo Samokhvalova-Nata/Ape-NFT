@@ -1,14 +1,13 @@
 import { Toaster } from "react-hot-toast";
-import { Header } from "components/Header";
-import { Hero } from "components/Hero";
-import { About } from "components/About";
-import { MindMap } from "components/MindMap";
-import { FAQ } from "components/FAQ";
-import { Arts } from "components/Arts";
-import { ContactUs } from "components/ContactUs";
-import { Footer } from "components/Footer";
+import { Header } from "sections/Header";
+import { Hero } from "sections/Hero";
+import { About } from "sections/About";
+import { MindMap } from "sections/MindMap";
+import { FAQ } from "sections/FAQ";
+import { Arts } from "sections/Arts";
+import { ContactUs } from "sections/ContactUs";
+import { Footer } from "sections/Footer";
 import { Container } from "./App.styled";
-
 
 export const App = () => {
   return (

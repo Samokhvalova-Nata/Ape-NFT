@@ -1,5 +1,5 @@
-import { BurgerMenu } from 'components/BurgerMenu';
-import { Logo } from 'components/Logo';
+import { Logo } from 'components/Header/Logo';
+import { BurgerMenu } from 'components/Header/BurgerMenu';
 import { HeaderContainer, HeaderWrap } from './Header.styled';
 
 export const Header = () => {

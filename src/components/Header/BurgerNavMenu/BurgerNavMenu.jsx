@@ -1,7 +1,7 @@
 import { useMediaQuery } from 'react-responsive';
+import { navLinks } from 'data';
 import { MobileMenu } from 'components/MobileMenu';
 import { BurgerNavMenuContainer, NavLink, NavMenuButton, NavMenuElement } from './BurgerNavMenu.styled';
-import { navLinks } from 'data';
 
 export const BurgerNavMenu = ({ isOpened, onClick }) => {
   const isMobile = useMediaQuery({ maxWidth: 767 });

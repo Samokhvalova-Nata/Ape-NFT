@@ -1,7 +1,7 @@
 import { useMediaQuery } from 'react-responsive';
 import { mainMapCards } from 'data';
-import { SwiperMobile } from 'components/SwiperMobile';
-import { MindMapItem } from 'components/MindMapItem';
+import { SwiperMobile } from 'components/MindMap/SwiperMobile';
+import { MindMapItem } from 'components/MindMap/MindMapItem';
 import { MindMapContainer, MindMapGrid, MindMapTitle} from './MindMap.styled';
 
 

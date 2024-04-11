@@ -3,9 +3,8 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import './styles.css';
-import { MindMapItem } from 'components/MindMapItem';
 import { mainMapCards } from 'data';
-
+import { MindMapItem } from 'components/MindMap/MindMapItem';
 
 export const SwiperMobile = () => {
   return (
