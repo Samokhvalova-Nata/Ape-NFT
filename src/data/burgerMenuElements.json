@@ -1,0 +1,17 @@
+[
+  {
+    "linkHref": "https://discord.com/",
+    "ariaLabel": "Discord link",
+    "svgHref": "discord"
+  },
+  {
+    "linkHref": "https://logomark.com/",
+    "ariaLabel": "Logomark link",
+    "svgHref": "logomarkblue"
+  },
+  {
+    "linkHref": "https://twitter.com/",
+    "ariaLabel": "X link",
+    "svgHref": "icon-x"
+  }
+]

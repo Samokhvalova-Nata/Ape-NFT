@@ -1,0 +1,22 @@
+[
+  { 
+    "to": "mint", 
+    "children": "MINT" 
+  },
+  { 
+    "to": "arts", 
+    "children": "ARTS" 
+  },
+  { 
+    "to": "faq", 
+    "children": "Faq" 
+  },
+  { 
+    "to": "mind", 
+    "children": "M-map" 
+  },
+  { 
+    "to": "about", 
+    "children": "ABOUT" 
+  }
+]

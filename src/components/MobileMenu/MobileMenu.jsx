@@ -1,5 +1,6 @@
 import { createPortal } from 'react-dom';
-import { navLinks } from 'data';
+import elements from 'data/navMenuElements.json';
+import footer from 'data/footer.json';
 import { Logo } from 'components/Header/Logo';
 import { BurgerMenuList } from 'components/Header/BurgerMenuList';
 import { LogoMenuWrap, MobileMenuContainer, MobileMenuContent, MobileMenuElement, MobileMenuNav, MobileMenuText, MobileMenuWrap, NavLink } from './MobileMenu.styled';
@@ -18,7 +19,7 @@ export const MobileMenu = ({ isOpened, onClick }) => {
 
           <nav>
             <MobileMenuNav>
-              {navLinks.map(({to, children}) =>
+              {elements.map(({to, children}) =>
                 <MobileMenuElement key={to}>
                   <NavLink
                     to={to}
@@ -33,7 +34,7 @@ export const MobileMenu = ({ isOpened, onClick }) => {
           </nav>
 
         </MobileMenuContent>
-        <MobileMenuText>© Yacht ape 2024 all rights reserved</MobileMenuText>
+        <MobileMenuText>{footer.text}</MobileMenuText>
       </MobileMenuWrap>
     </MobileMenuContainer>,
     mobileRoot,

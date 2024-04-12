@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { artsList } from 'data';
+import { artsElements } from 'data/artsElements';
 import { ArtsImage } from './ArtsSlider.styled';
 
 
@@ -20,15 +20,20 @@ export const ArtsSlider = () => {
   }
 
   return (
-    <Swiper slidesPerView={slidesPerView} spaceBetween={24} navigation={true} modules={[Navigation]}>
-      {artsList.map((el, index) => (
-        <SwiperSlide key={index}>
+    <Swiper
+      slidesPerView={slidesPerView}
+      spaceBetween={24}
+      navigation={true}
+      modules={[Navigation]}
+    >
+      {artsElements.map(({id, src, alt}) => (
+        <SwiperSlide key={id}>
             <ArtsImage
-              src={el[0]} alt='NFT monkey example' loading='lazy'
-              srcSet={`${el[0]} 284w,
-                      ${el[1]} 568w,
-                      ${el[2]} 1185w,
-                      ${el[3]} 2370w,`}
+              src={src[0]} alt={alt} loading='lazy'
+              srcSet={`${src[0]} 284w,
+                      ${src[1]} 568w,
+                      ${src[2]} 1185w,
+                      ${src[3]} 2370w,`}
               sizes="(max-width: 1279px) 284px, 1185px"
             />
         </SwiperSlide>

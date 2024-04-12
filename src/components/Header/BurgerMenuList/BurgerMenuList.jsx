@@ -1,7 +1,8 @@
 import { useMediaQuery } from 'react-responsive';
-import icon from '../../../images/icons/sprite-icons.svg';
-import { menuElements } from 'data';
+import icon from 'images/icons/sprite-icons.svg';
+import elements from 'data/burgerMenuElements.json';
 import { BurgerMenuWrap, Link, MenuButton, MenuElement } from './BurgerMenuList.styled'
+
 
 export const BurgerMenuList = ({ isOpened, onClick, mobile = false }) => {
   const isMobile = useMediaQuery({ maxWidth: 767 });
@@ -18,7 +19,7 @@ export const BurgerMenuList = ({ isOpened, onClick, mobile = false }) => {
           </MenuButton>
         </MenuElement>
       }
-      {menuElements.map(({linkHref, ariaLabel, svgHref}) =>
+      {elements.map(({linkHref, ariaLabel, svgHref}) =>
         <MenuElement mobile={mobile} key={ariaLabel}>
           <Link
             href={linkHref}

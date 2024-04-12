@@ -1,10 +1,11 @@
 import { Link } from 'react-scroll';
-import imgMobile1x from '../../images/pic/hero-mobile-1x.png';
-import imgMobile2x from '../../images/pic/hero-mobile-2x.png';
-import imgTablet1x from '../../images/pic/hero-tablet-1x.png';
-import imgTablet2x from '../../images/pic/hero-tablet-2x.png';
-import imgDesktop1x from '../../images/pic/hero-desktop-1x.png';
-import imgDesktop2x from '../../images/pic/hero-desktop-2x.png';
+import imgMobile1x from 'images/pic/hero-mobile-1x.png';
+import imgMobile2x from 'images/pic/hero-mobile-2x.png';
+import imgTablet1x from 'images/pic/hero-tablet-1x.png';
+import imgTablet2x from 'images/pic/hero-tablet-2x.png';
+import imgDesktop1x from 'images/pic/hero-desktop-1x.png';
+import imgDesktop2x from 'images/pic/hero-desktop-2x.png';
+import data from 'data/heroData.json';
 import { Button } from 'components/Button';
 import { HeroContainer, HeroImage, HeroText, HeroTitle, HeroTitleText, HeroWrap } from './Hero.styled';
 
@@ -24,18 +25,18 @@ export const Hero = () => {
             463px' />
       <HeroWrap>
         <div>
-          <HeroTitleText>diD yOu seE iT ?</HeroTitleText>
+          <HeroTitleText>{data.titleUpText}</HeroTitleText>
           <HeroTitle>
-            <p>YACHT</p>
-            <p>APES</p>
+            <p>{data.title1}</p>
+            <p>{data.title2}</p>
           </HeroTitle>
-          <HeroTitleText>Apes aRe eveRywhere</HeroTitleText>
+          <HeroTitleText>{data.titleDownText}</HeroTitleText>
         </div>
         <div>
           <Button>
             <Link to="mint" smooth={true} duration={500}>{'MEET APES'}</Link>
           </Button>
-          <HeroText>Yacht Ape is a collection of unique digital apes that you can own in NFT format</HeroText>
+          <HeroText>{data.descroption}</HeroText>
         </div>
       </HeroWrap>
     </HeroContainer>

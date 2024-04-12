@@ -1,9 +1,11 @@
 import { FooterContainer, FooterText } from './Footer.styled';
+import footer from 'data/footer.json';
+
 
 export const Footer = () => {
   return (
     <FooterContainer>
-      <FooterText>© Yacht ape 2024 all rights reserved</FooterText>
+      <FooterText>{footer.text}</FooterText>
     </FooterContainer>
   );
 };

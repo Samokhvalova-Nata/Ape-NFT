@@ -1,4 +1,5 @@
-import icon from '../../images/icons/sprite-icons.svg';
+import icon from 'images/icons/sprite-icons.svg';
+import data from 'data/contactUsData.json';
 import { Form } from 'components/Form';
 import { ContactUsContainer, ContactUsText, ContactUsTextWrap, ContactUsTitle } from './ContactUs.styled';
 
@@ -6,14 +7,12 @@ import { ContactUsContainer, ContactUsText, ContactUsTextWrap, ContactUsTitle } 
 export const ContactUs = () => {
   return (
     <ContactUsContainer id="mint">
-      <ContactUsTitle>Are you in?</ContactUsTitle>
+      <ContactUsTitle>{data.title}</ContactUsTitle>
       <ContactUsTextWrap>
         <svg>
           <use href={`${icon}#addsharp`}></use>
         </svg>
-        <ContactUsText>
-          Join the YACHT APE community to be one of the first to receive our limited edition NFT
-        </ContactUsText>
+        <ContactUsText>{data.text}</ContactUsText>
       </ContactUsTextWrap>
       <Form />
     </ContactUsContainer>

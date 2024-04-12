@@ -1,5 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
-import { mainMapCards } from 'data';
+import data from 'data/mainMapElements.json';
 import { SwiperMobile } from 'components/MindMap/SwiperMobile';
 import { MindMapItem } from 'components/MindMap/MindMapItem';
 import { MindMapContainer, MindMapGrid, MindMapTitle} from './MindMap.styled';
@@ -14,7 +14,7 @@ export const MindMap = () => {
       {isMobile
         ? <SwiperMobile />
         : <MindMapGrid>
-            {mainMapCards.map(({ text, title }) => (
+            {data.map(({ text, title }) => (
               <MindMapItem key={title} text={text} title={title}/>))}
         </MindMapGrid>
       }

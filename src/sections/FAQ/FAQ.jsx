@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FAQlist } from 'data';
+import {fagElements} from 'data/faqElements';
 import { FAQItem } from 'components/FAQItem';
 import { FAQContainer, FAQTitle } from './FAQ.styled';
 
@@ -15,16 +15,18 @@ export const FAQ = () => {
     <FAQContainer id="faq">
       <FAQTitle>FAQ</FAQTitle>
       <ul>
-        {FAQlist.map(({ text, title, src }, index) => (
+        {fagElements.map(({ id, text, title, src, alt }, index) => (
           <FAQItem
-            key={title}
+            key={id}
             text={text}
             title={title}
+            src={src}
+            alt={alt}
             index={index}
             openIndex={openIndex}
             toggleFAQ={toggleFAQ}
             isOpen={index === openIndex}
-            src={src}/>
+            />
         ))}
       </ul>
       
